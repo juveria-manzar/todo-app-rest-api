@@ -1,4 +1,4 @@
-package com.juveria.rest.webservices.restfulwebservice;
+package com.juveria.rest.webservices.restfulwebservice.helloworld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,6 +25,7 @@ public class HelloWorldController {
 	
 	@GetMapping(path="/hello-world-bean/path-variable/{name}")
 	public HelloWorldBean helloWorldBean(@PathVariable String name) {
+		//throw new RuntimeException("Something went wrong");
 		return new HelloWorldBean(String.format("Hello, World %s", name));
 	}
 }

@@ -1,4 +1,4 @@
-package com.juveria.rest.webservices.restfulwebservice;
+package com.juveria.rest.webservices.restfulwebservice.helloworld;
 
 public class HelloWorldBean {
 	
